@@ -1,5 +1,8 @@
 package Algorithms;
 
+/**
+ * Here the core logic of bubble sort remains the same. The only change is we are using recursion.
+ */
 public class _5_RecursiveBubbleSort {
     public static void sort(int[] arr, int size){
         if(size==1) return;
