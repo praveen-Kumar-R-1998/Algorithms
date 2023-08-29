@@ -42,7 +42,7 @@ public class _4_MergeSort {
         /**
          * if elements on right half are still pending
          */
-        while(right<-high){
+        while(right<=high){
             temp.add(arr[right]);
             right++;
         }
