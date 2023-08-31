@@ -28,6 +28,15 @@ public class FindLargestElementInAnArray {
         System.out.println("Largest element in the array is "+ arr[arr.length-1]);
 
     }
+    public static void approach_3(int[] arr){
+        int max = arr[0];
+        for(int i=0; i<arr.length; i++){
+            if(arr[i]>max){
+                max = arr[i];
+            }
+        }
+        System.out.println("Highest element in the array is: "+max);
+    }
 
     public static void main(String[] args) {
         int arr[] = {100,45,23,56,76,123};
@@ -40,6 +49,9 @@ public class FindLargestElementInAnArray {
         approach_1(arr);
         System.out.println("********************##########********************");
         approach_2(arr);
+        System.out.println("********************##########********************");
+
+        approach_3(arr);
 
         System.out.print("Array after sorting: ");
         for(int i=0; i<arr.length; i++){
